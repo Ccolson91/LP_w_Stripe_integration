@@ -47,7 +47,7 @@
 
 </script>
 
-<section class="chapter-preview default-margin">
+<section class="landing-page-section">
     <h2 class="mb-l">What you're getting</h2>
     <div class="chapter-container">
         <ul>
@@ -73,12 +73,6 @@
 </section>
 
 <style>
-    .chapter-preview {
-        padding: 80px 0;
-        margin-left: 12vw;
-        margin-right: 20vw;
-        max-width: 1150px;
-    }
     .chapter-container {
         display: flex;
         justify-content: space-between;
