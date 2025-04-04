@@ -3,6 +3,8 @@
     import bookCover from "$assets/book_cover.png";
     import phoneCover from "$assets/phone_cover.png";
     import {Button} from "$components";
+
+    let {children} = $props();
 </script>
 
 <section class="hero">
@@ -16,6 +18,9 @@
         <img class="phone-cover" src={phoneCover} alt="" />
     </div>
     <div class="hero-text white text-center">
+        {#if children}
+        {@render children()}
+        {:else}
         <h1>THIS EBOOK WILL</h1>
         <h1>SAVE YOU MONEY,</h1>
         <h1 class="mb-m">TIME & NERVES</h1>
@@ -23,6 +28,7 @@
             I moved to Spain seven years ago. The process was painful and difficult. I learned most things the hard way: finding a job, getting a visa, calculating my cost of living, choosing an apartment. That's why I wrote this e-book, to tell you how I did it. No bullshit, no stress.
         </p>
         <Button>Purchase E-book for $10</Button>
+        {/if}
     </div>
 </section>
 
